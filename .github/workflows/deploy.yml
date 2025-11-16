@@ -28,9 +28,7 @@ jobs:
       - name: Build and Prepare
         run: |
           mkdir -p public
-          for file in *; do
-            [ "$file" != "public" ] && [ "$file" != ".git" ] && [ "$file" != ".github" ] && cp -r "$file" public/
-          done
+          find . -maxdepth 1 -type f \( -name "*.html" -o -name "*.css" -o -name "*.js" \) -exec cp {} public/ \;
           rm -rf public/.git public/.github
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
