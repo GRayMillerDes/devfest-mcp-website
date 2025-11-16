@@ -10,72 +10,100 @@
     body {
       margin: 0;
       font-family: 'Montserrat', Arial, sans-serif;
-      background: linear-gradient(135deg, #1a3a52, #2d5a7b 100%);
-      color: #36413e;
+      background: linear-gradient(135deg, #6b46c1, #9333ea 100%);
+      color: #2d3748;
     }
     nav { 
-      background: rgba(255, 255, 255, 0.95);
-      box-shadow: 0 2px 8px rgba(60,80,100,0.06);
+      background: rgba(107, 114, 128, 0.95);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      padding: 18px 30px;
+      padding: 18px 40px;
       flex-wrap: wrap;
+      gap: 10px;
     }
     nav a {
-      color: #3a6351;
+      color: #ffffff;
       text-decoration: none;
-      margin: 0 30px;
-      font-weight: 700;
+      margin: 0 15px;
+      font-weight: 800;
       letter-spacing: 1px;
       font-size: 1.1em;
-      transition: color 0.2s;
+      transition: all 0.3s ease;
       display: block;
-      padding: 8px 0;
+      padding: 10px 16px;
+      border-radius: 6px;
     }
     nav a:hover {
-      color: #369e5b;
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
     }
     .main-intro {
-      max-width: 800px;
-      margin: 60px auto 40px auto;
-      background: rgba(255,255,255,0.83);
-      border-radius: 18px;
-      padding: 48px 36px;
-      box-shadow: 0 6px 24px rgba(135,150,120,0.07);
+      max-width: 850px;
+      margin: 50px auto 40px auto;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      padding: 52px 48px;
+      box-shadow: 0 12px 40px rgba(107, 70, 193, 0.15);
       text-align: center;
+      border: 2px solid rgba(147, 51, 234, 0.1);
+      position: relative;
+    }
+    .main-intro::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: 30px;
+      width: 40px;
+      height: 4px;
+      background: linear-gradient(90deg, #6b46c1, #9333ea);
+      border-radius: 2px;
     }
     .main-intro h1 {
-      margin: 0 0 16px 0;
-      font-size: 2em;
-      font-weight: bold;
-      color: #317773;
+      margin: 0 0 12px 0;
+      font-size: 2.4em;
+      font-weight: 800;
+      background: linear-gradient(135deg, #6b46c1, #9333ea);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
       letter-spacing: 1.5px;
     }
     .main-intro .topic {
-      color: #26547c;
-      font-size: 1.3em;
+      color: #7c3aed;
+      font-size: 1.25em;
       margin: 8px 0 30px 0;
       letter-spacing: 1.2px;
+      font-weight: 600;
     }
     .main-intro p {
-      font-size: 1.12em;
-      line-height: 1.8;
-      margin: 10px 0;
+      font-size: 1.08em;
+      line-height: 1.85;
+      margin: 14px 0;
+      color: #4a5568;
     }
     .contact {
       margin-top: 40px;
       font-size: 1em;
-      padding: 14px 22px;
-      background: #e9f6ef;
-      border-radius: 10px;
+      padding: 18px 28px;
+      background: linear-gradient(135deg, #6b46c1, #9333ea);
+      border-radius: 12px;
       display: inline-block;
-      color: #487750;
+      color: #ffffff;
+      box-shadow: 0 6px 20px rgba(107, 70, 193, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .contact:hover {
+      transform: translateY(-3px);
+    }
+    .contact a {
+      color: #e9d5ff;
     }
     .footer {
       text-align: center;
       font-size: 1em;
-      color: #9db9a7;
+      color: rgba(255, 255, 255, 0.8);
       background: none;
       margin: 60px 0 20px 0;
     }
@@ -83,35 +111,32 @@
       nav {
         flex-direction: column;
         align-items: stretch;
-        padding: 8px 0;
+        padding: 12px 0;
+        gap: 0;
       }
       nav a {
         margin: 0;
-        padding: 12px 0;
+        padding: 14px 16px;
         font-size: 1em;
-        border-top: 1px solid #e8f0df;
+        border-radius: 0;
       }
       .main-intro {
-        margin: 18px 8px 18px 8px;
-        padding: 24px 8px;
-        border-radius: 10px;
+        margin: 20px 12px;
+        padding: 28px 20px;
+        border-radius: 16px;
       }
       .main-intro h1 {
-        font-size: 1.4em;
+        font-size: 1.8em;
       }
       .main-intro .topic {
-        font-size: 1.03em;
+        font-size: 1.05em;
       }
       .main-intro p {
         font-size: 0.98em;
       }
       .contact {
         font-size: 0.95em;
-        padding: 10px 7px;
-      }
-      .footer {
-        font-size: 0.9em;
-        margin: 24px 0 8px 0;
+        padding: 12px 18px;
       }
     }
   </style>
