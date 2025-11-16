@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevTools MCP 介绍 | Gray Miller</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: linear-gradient(135deg, #e8f0df, #cee8fc 100%);
+      color: #36413e;
+    }
+    nav {
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 8px rgba(60,80,100,0.06);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 18px 0;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #3a6351;
+      text-decoration: none;
+      margin: 0 30px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 1.1em;
+      transition: color 0.2s;
+      display: block;
+      padding: 8px 0;
+    }
+    nav a:hover {
+      color: #369e5b;
+    }
+    .section {
+      max-width: 800px;
+      margin: 60px auto 40px auto;
+      background: rgba(255,255,255,0.85);
+      border-radius: 18px;
+      padding: 46px 36px;
+      box-shadow: 0 6px 24px rgba(135,150,120,0.07);
+    }
+    .section h2 {
+      color: #24406b;
+      margin-top: 0;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .section p {
+      font-size: 1.13em;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 1em;
+      color: #9db9a7;
+      margin: 60px 0 20px 0;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 8px 0;
+      }
+      nav a {
+        margin: 0;
+        padding: 12px 0;
+        font-size: 1em;
+        border-top: 1px solid #e8f0df;
+      }
+      .section {
+        margin: 18px 8px 18px 8px;
+        padding: 18px 8px;
+        border-radius: 10px;
+      }
+      .section h2 {
+        font-size: 1.27em;
+      }
+      .section p {
+        font-size: 0.96em;
+      }
+      .footer {
+        font-size: 0.9em;
+        margin: 24px 0 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/index.html">首页</a>
+    <a href="/gdg-devfest.html">GDG与DevFest</a>
+    <a href="/devtools-mcp.html">DevTools MCP</a>
+    <a href="/about.html">关于我</a>
+  </nav>
+  <img src="https://cdn.shopify.com/s/files/1/0457/1496/4502/files/image19_77454061-6230-4199-8e81-c59fe8325271.jpg?v=1750760255" alt="协作与科技 - Everlane 灵感配图" style="display:block;max-width:98%;margin:0 auto 20px auto;border-radius:14px;box-shadow:0 3px 14px rgba(130,150,250,0.11);">
+  <div class="section">
+    <h2>什么是 DevTools MCP？</h2>
+    <p>
+      Chrome DevTools MCP（Multi-Client Protocol）Server 是一种专为提升多人协作调试体验设计的协议与服务。它允许多个客户端实时协作控制同一个调试会话，为团队工作流带来极大的便利。
+    </p>
+    <h2>核心特性</h2>
+    <p>
+      • 多用户并发调试同一页面<br>
+      • 快速权限控制与会话同步<br>
+      • 更高效的远程协作与问题追踪
+    </p>
+    <h2>应用场景</h2>
+    <p>
+      DevTools MCP Server 能广泛应用于前端开发协作、运维排障、线上演示、远程技术面试等多场景。它为 DevOps 与开发团队提供了现代化的高效协作武器。
+    </p>
+  </div>
+  <div class="footer">
+    &copy; 2025 Gray Miller | Google DevFest Workshop
+  </div>
+</body>
+</html>
