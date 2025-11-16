@@ -28,16 +28,14 @@ jobs:
       - name: Build and Prepare
         run: |
           mkdir -p public
-          for file in *; do"*.html" -o -name "*.css" -o -name "*.js" | xargs -I {} cp {} public/
-            [ "$file" != "public" ] && [ "$file" != ".git" ] && [ "$file" != ".github" ] && cp -r "$file" public/rve=mode ./* public/ 2>/dev/null || true
-          donepublic/.github public/public
+          for file in *; do
+            [ "$file" != "public" ] && [ "$file" != ".git" ] && [ "$file" != ".github" ] && cp -r "$file" public/
+          done
           rm -rf public/.git public/.github
-      - name: Upload artifact actions/upload-pages-artifact@v3
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./publico GitHub Pages
+          path: ./public
       - name: Deploy to GitHub Pages
-        id: deployment        uses: actions/deploy-pages@v4
-
-
+        id: deployment
         uses: actions/deploy-pages@v4
