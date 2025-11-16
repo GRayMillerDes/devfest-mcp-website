@@ -28,7 +28,7 @@ jobs:
       - name: Build and Prepare
         run: |
           mkdir -p public
-          cp -r ./* public/
+          cp -r --ignore=public ./* public/
           rm -rf public/.git public/.github
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
